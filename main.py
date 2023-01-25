@@ -120,8 +120,8 @@ for cc in range(2, faceNumber + 1) :  #  対象の顔を１人につき何枚の
 
 print("距離が一番遠いとTop〇〇番目（色情報を含めた場合は、1度に両方の閾値を変更）")
 ICP.evaluationALL(solution, 3, 0, 10000, 0.001, 0, 10000, 0.01, 0)  # 評価する
-print("距離が一番遠いと全体の平均(色情報を含めた場合は、1度に両方の閾値を変更)")
-ICP.evaluationALL(solution, 1, 0, 10000, 0.001, 0, 10000, 0.00001, 0)  # 評価する
+# print("距離が一番遠いと全体の平均(色情報を含めた場合は、1度に両方の閾値を変更)")
+# ICP.evaluationALL(solution, 1, 0, 10000, 0.001, 0, 10000, 0.00001, 0)  # 評価する
 
 solution = np.array(solution)  # デバックしたときにみやすくするため
 print("finish")
