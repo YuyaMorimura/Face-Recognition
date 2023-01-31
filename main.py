@@ -83,7 +83,7 @@ for cc in range(2, faceNumber + 1) :  #  対象の顔を１人につき何枚の
             # 顔のパーツごとの認証コーナー
             # mmg1 = faceParts.mouse(mmg1, mousePoint1)  # 口の領域の抽出
             # mmg1 = faceParts.nose(mmg1, mousePoint1)  # 鼻の領域の抽出
-            mmg1 = faceParts.eyes(mmg1, faceArea1, mousePoint1)  # 目の領域の抽出
+            # mmg1 = faceParts.eyes(mmg1, faceArea1, mousePoint1)  # 目の領域の抽出
 
             pcd1 = Disparity.view_pcd2(ddpp1, mmg1, faceArea1)  # 3Dモデルの作成（背景を削除するのも含まれる）
             pcd2 = Disparity.view_pcd2(ddpp2, mmg2, faceArea2)  # 3Dモデルの作成（背景を削除するのも含まれる）

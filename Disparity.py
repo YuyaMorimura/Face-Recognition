@@ -370,7 +370,7 @@ def deleteOutlierNose(mmg, faceArea, ddpp, mousePoint):  # 鼻の外れ値（照
     listArea.sort(reverse=False)  # depth値が小さい順にソートする
 
     # 口より上の領域のうち、下位2％のDepth値が外れ値だと仮定して、除去する
-    count = int(noseHeight * noseWidth * 0.02)
+    count = int(noseHeight * noseWidth * 0.01)
     for i in range(0, count) :
         mmg[listArea[i][1], listArea[i][2]] = [0, 0, 0]
 
